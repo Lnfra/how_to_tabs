@@ -2,7 +2,7 @@
 .DS_Store
 
 # Intelij
-.idea/workspace.xml
+.idea/
 
 # npm
 node_modules/**/.bin/
