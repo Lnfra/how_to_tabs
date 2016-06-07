@@ -8,6 +8,9 @@
   },
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "5.9.1"
+  },
   "devDependencies": {
     "jake": "^8.0.12"
   }
