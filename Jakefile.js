@@ -1,6 +1,7 @@
 /**
  * Created by lnfra on 7/6/16.
  */
+/* globals desc: false, task: false, complete: false, fail: false */
 
 (function(){
     "use strict";
@@ -30,10 +31,33 @@
 
         jshint.checkFiles({
             files: "Jakefile.js",
-            options: {},
-            globals: {}
+            options: {
+                bitwise: true,
+                eqeqeq: true,
+                forin: true,
+                freeze: true,
+                futurehostile: true,
+                latedef: "nofunc",
+                noarg: true,
+                nocomma: true,
+                nonbsp: true,
+                nonew: true,
+                strict: true,
+                undef: true,
+
+                node: true,
+                browser: true
+            },
+            globals: {
+
+            }
         }, complete, fail);
 
     }, {async: true});
+
+    function deleteMe() {
+
+    }
+
 
 }());
